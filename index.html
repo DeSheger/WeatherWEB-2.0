@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>ApiWEB</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="sources/pics/logo1.png">
+
+    <link rel="stylesheet" href="styles/css/styles.css">
+    <script src="scripts/currentweather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/dropdown_menu.js" defer></script>
+    <script src="scripts/intro.js" defer></script>
+  </head>
+  <body>
+    <div class="intro" style="background-image: url('./sources/pics/background1.png');background-position: center;">
+      
+      <form action="" class="intro__search search">
+        <p>Search your city </p>
+        <input type="text" class="intro__area search__area">
+        <input type="button" value="Search" id="intro_btn" class="search__button" onclick="current_weather(),intro(),daily_weather()">
+      </form>
+    </div>
+
+     <div class="wrapper">
+       <!--header-->
+       <header class="header">
+         <div class="header__logo">
+           <img src="sources/pics/logo1.jpg" alt="" class="header__logo-img">
+         </div>
+         
+         <nav class="header__menu">
+
+           <div class="header__menu--extended">
+             <ul class="header__menu--extended-list">
+               <li class="header__menu--extended-item"><a href="#link1" class="header__menu--extended-link">Home</a></li>
+               <li class="header__menu--extended-item"><a href="#link2" class="header__menu--extended-link">Current</a></li>
+               <li class="header__menu--extended-item"><a href="#link3" class="header__menu--extended-link">Weekly</a></li>
+               <li class="header__menu--extended-item"><a href="#link4" class="header__menu--extended-link">Map</a></li>
+             </ul>
+           </div>
+
+           <div class="header__menu--dropdown">
+             <img src="sources/pics/settings.svg" alt="" class="header__menu--dropdown-img" onclick="dropdown()">
+             <div class="header__menu--dropdown-list">
+                <a href="#link1" class="header__menu--dropdown-link">Home</a>
+                <a href="#link2" class="header__menu--dropdown-link">Current</a>
+                <a href="#link3" class="header__menu--dropdown-link">Weekly</a>
+                <a href="#link4" class="header__menu--dropdown-link">Map</a>
+             </div>
+           </div>
+          
+         </nav>
+
+         <div class="header__search">
+          <form action="" class="search">
+            <input type="text" class="search__area">
+            <input type="button" value="Search" class="search__button" onclick="current_weather(),daily_weather()">
+          </form>
+         </div>
+       </header>
+
+       <!--banner-->
+       <div id="link1"></div>
+       <div class="banner" style="background-image: url('./sources/pics/background1.png');background-position: center;">
+         <h1 class="banner__intro">WeatherAPI - new features for future</h1>
+       </div>
+
+       <!--weather-current-->
+       
+       <div class="weather-current">
+         <div class="weather-current__container">
+          <div class="weather-current__city">
+
+          </div>
+          <div class="weather-current__search">
+            <form action="" class="search">
+              <input type="text" class="search__area">
+              <input type="button" value="Search" class="search__button" onclick="current_weather(),daily_weather()">
+            </form>
+          </div>
+          <div class="weather-current__img">
+              <!--image-->
+           </div>
+          <div class="weather-current__describe">
+            TEST
+          </div>
+          <div class="weather-current__temperature">
+            TEST
+          </div>
+          <div class="weather-current__wind">
+            TEST
+          </div>
+         </div>
+       </div>
+
+      <!--weather-week-->
+      <div id="link2"></div>
+       <div class="weather-week">
+         <div class="weather-week__container">
+           <div class="weather-week__name">Poland</div>
+          <div class="weather-week__day">
+            <div class="weather-week__img"></div>
+            <p class="weather-week__temp"></p>
+           </div>
+           <div class="weather-week__day">
+            <div class="weather-week__img"></div>
+            <p class="weather-week__temp"></p>
+          </div>
+          <div class="weather-week__day">
+            <div class="weather-week__img"></div>
+            <p class="weather-week__temp"></p>
+          </div>
+          <div class="weather-week__day">
+            <div class="weather-week__img"></div>
+            <p class="weather-week__temp"></p>
+          </div>
+          <div class="weather-week__day">
+            <div class="weather-week__img"></div>
+            <p class="weather-week__temp"></p>
+          </div>
+          <div class="weather-week__day">
+            <div class="weather-week__img"></div>
+            <p class="weather-week__temp"></p>
+          </div>
+          <div class="weather-week__day">
+            <div class="weather-week__img"></div>
+            <p class="weather-week__temp"></p>
+          </div>
+         </div>
+       </div>
+
+      <!--weather-map-->
+      <div id="link3"></div>
+       <div class="weather-map">
+        <div class="weather-map__container">
+          <iframe class="weather-map__map" title="Inline Frame Example"
+          
+          src="https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=50&lon=20&zoom=4">
+      </iframe>
+           
+         </div>
+       </div>
+       
+
+      <!--footer-->
+      <div id="link4"></div>
+       <footer class="footer">
+        ©Copyright 2021
+       </footer>
+     </div>
+     
+    </body>
+</html>
