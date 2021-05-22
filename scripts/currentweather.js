@@ -7,7 +7,7 @@ function current_weather() {
     const current = new XMLHttpRequest();
 
     let city_name = document.querySelectorAll(".search__area");
-    let city_value=city_name[0].value || city_name[1].value;
+    let city_value=city_name[0].value || city_name[1].value || city_name[2].value;
 
     const current_city=document.querySelector(".weather-current__city");
     const current_logo=document.querySelector(".weather-current__img");
@@ -50,5 +50,7 @@ function current_weather() {
 
     area_clear[0].value="";
     area_clear[1].value="";
+    area_clear[2].value="";
 
 }
+
