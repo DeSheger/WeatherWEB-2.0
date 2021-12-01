@@ -4,3 +4,5 @@ const intro = () => {
     const wrapper = document.querySelector(".wrapper");
     wrapper.style.display="flex";
 }
+
+export default intro;

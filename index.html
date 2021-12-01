@@ -9,10 +9,8 @@
     <link rel="shortcut icon" href="sources/pics/logo1.png">
 
     <link rel="stylesheet" href="styles/css/styles.css">
-    <script src="scripts/currentweather.js" defer></script>
-    <script src="scripts/forecast.js" defer></script>
-    <script src="scripts/dropdown_menu.js" defer></script>
-    <script src="scripts/intro.js" defer></script>
+    
+    <script src="./main.js" type="module" defer></script>
   </head>
   <body>
     <div class="intro" style="background-image: url('./sources/pics/background1.png');background-position: center;">
@@ -20,7 +18,7 @@
       <form action="" class="intro__search search">
         <p>Search your city </p>
         <input type="text" class="intro__area search__area">
-        <input type="button" value="Search" id="intro_btn" class="search__button" onclick="current_weather(),intro(),daily_weather()">
+        <input type="button" value="Search" id="intro_btn" class="search__button">
       </form>
     </div>
 
@@ -57,7 +55,7 @@
          <div class="header__search">
           <form action="" class="search">
             <input type="text" class="search__area">
-            <input type="button" value="Search" class="search__button" onclick="current_weather(),daily_weather()">
+            <input type="button" value="Search" class="search__button">
           </form>
          </div>
        </header>

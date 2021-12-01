@@ -1,4 +1,5 @@
-const dropdown=()=>{
+const dropdown = () => {
     document.querySelector(".header__menu--dropdown-list").classList.toggle("show")
 }
 
+export default dropdown;
