@@ -18,7 +18,7 @@ class currentWeather {
 
     fetchCurrentWeatherData = () => {
 
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.cityName}&appid=34cf18d958a5bebc2a3aaa0cf4eccbf6&units=metric`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.cityName}&appid=34cf18d958a5bebc2a3aaa0cf4eccbf6&units=metric`)
             .then(response => response.json())
             .then(data => {
                 console.log(data)
